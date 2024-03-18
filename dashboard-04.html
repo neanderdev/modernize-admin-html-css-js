@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dashboard-04.css" />
+
+    <title>Dashboard 03 | Modernize</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button type="button" class="open-sidebar" onclick="openSidebar()">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo" />
+
+          <h4>Modernize</h4>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search..." />
+
+        <i data-lucide="search"></i>
+      </div>
+
+      <div class="info-user">
+        <button type="button" class="chat-button">
+          <i data-lucide="message-square-text"></i>
+        </button>
+
+        <button type="button" class="notifications-button">
+          <i data-lucide="bell"></i>
+
+          <span>5</span>
+        </button>
+
+        <button type="button" class="user-button">
+          <img src="https://github.com/neanderdev.png" alt="Imagem de perfil" />
+
+          <span>Neander</span>
+
+          <i data-lucide="chevron-down"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <button type="button" class="close-sidebar" onclick="closeSidebar()">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="links">
+          <ul>
+            <li class="active">
+              <a href="">
+                <i data-lucide="home"></i>
+
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="list"></i>
+
+                Orders
+
+                <span class="badge">16</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="tag"></i>
+
+                Products
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="folder"></i>
+
+                Categories
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="users"></i>
+
+                Customers
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="area-chart"></i>
+
+                Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="star"></i>
+
+                Coupons
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="message-square-text"></i>
+
+                Inbox
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Other Information</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="help-circle"></i>
+
+                Knowledge Base
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="bookmark"></i>
+
+                Product Updates
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Settings</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="user"></i>
+
+                Personal Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="settings"></i>
+
+                Global Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <span>Grow Business</span>
+
+          <p>Explore our marketing solutions</p>
+
+          <button type="button" class="regular">Read More</button>
+        </div>
+      </aside>
+
+      <main>
+        <div class="header">
+          <h5>Dashboard</h5>
+
+          <button type="button" class="button-white">
+            <i data-lucide="settings"></i>
+
+            Manage
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-info">
+              <span>Existing Users</span>
+
+              <h6>5.653</h6>
+
+              <span class="income">
+                22.45%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <span>New Users</span>
+
+              <h6>1.650</h6>
+
+              <span class="income">
+                15.34%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <span>Total Visits</span>
+
+              <h6>9.504</h6>
+
+              <span class="expense">
+                18.25%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <span>Unique Visits</span>
+
+              <h6>5.450</h6>
+
+              <span class="expense">
+                10.24%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="unique-visits-over-time">
+          <div class="header">
+            <span>Unique Visits Over Time</span>
+
+            <button type="button" class="dropdown">
+              Last 12 Hours
+
+              <i data-lucide="chevron-down"></i>
+            </button>
+          </div>
+
+          <div class="legends">
+            <div class="legend">
+              <div class="square green"></div>
+
+              <span>New Users</span>
+            </div>
+
+            <div class="legend">
+              <div class="square blue"></div>
+
+              <span>Returning Users</span>
+            </div>
+          </div>
+
+          <div id="chart-unique-visits-over-time"></div>
+        </div>
+
+        <div class="recent-transactions-and-distribution-by-country">
+          <div class="recent-transactions">
+            <div class="header">
+              <span>Recent Transactions</span>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>
+                      <span>Name</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Date</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Amount</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Status</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Jessica S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$124.97</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge paid">Paid</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Andrew S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$55.42</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge pending">Pending</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Kevin S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$89.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge paid">Paid</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Jack S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$144.94</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge pending">Pending</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Arthur S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$70.52</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge paid">Paid</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="distribution-by-country">
+            <div class="header">
+              <span>Distribution by Country</span>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>
+                      <span>Country</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Percentage</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="country">
+                      <span class="title-head">Country</span>
+
+                      <div>
+                        <img
+                          src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/bandeira-estados-unidos.jpg"
+                          alt="United States"
+                        />
+
+                        <span>United States</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="percentage">
+                      <span class="title-head">Percentage</span>
+
+                      <div>
+                        <span>55%</span>
+
+                        <progress value="55" max="100">55%</progress>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="country">
+                      <span class="title-head">Country</span>
+
+                      <div>
+                        <img
+                          src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/11/bandeira-do-canada.jpg"
+                          alt="Canada"
+                        />
+
+                        <span>Canada</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="percentage">
+                      <span class="title-head">Percentage</span>
+
+                      <div>
+                        <span>20%</span>
+
+                        <progress value="20" max="100">20%</progress>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="country">
+                      <span class="title-head">Country</span>
+
+                      <div>
+                        <img
+                          src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2023/05/bandeira-da-polonia.jpg"
+                          alt="Poland"
+                        />
+
+                        <span>Poland</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="percentage">
+                      <span class="title-head">Percentage</span>
+
+                      <div>
+                        <span>15%</span>
+
+                        <progress value="15" max="100">15%</progress>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="country">
+                      <span class="title-head">Country</span>
+
+                      <div>
+                        <img
+                          src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/03/bandeira-belgica.jpg"
+                          alt="Belgium"
+                        />
+
+                        <span>Belgium</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="percentage">
+                      <span class="title-head">Percentage</span>
+
+                      <div>
+                        <span>6%</span>
+
+                        <progress value="6" max="100">6%</progress>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="country">
+                      <span class="title-head">Country</span>
+
+                      <div>
+                        <img
+                          src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/11/bandeira-da-russia.jpg"
+                          alt="Russia"
+                        />
+
+                        <span>Russia</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="percentage">
+                      <span class="title-head">Percentage</span>
+
+                      <div>
+                        <span>4%</span>
+
+                        <progress value="4" max="100">4%</progress>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const optionsUniqueVisitsOverTime = {
+        chart: {
+          type: "line",
+          width: "100%",
+          height: "80%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "New Users",
+            data: [250, 110, 356, 95, 42, 269, 105, 198, 97, 250, 365, 412],
+            color: "#1fd286",
+          },
+          {
+            name: "Returning Users",
+            data: [100, 150, 250, 110, 210, 330, 495, 587, 75, 95, 153, 369],
+            color: "#1e5eff",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: [
+            "12 AM",
+            "1 PM",
+            "2 PM",
+            "3 PM",
+            "4 PM",
+            "5 PM",
+            "6 PM",
+            "7 PM",
+            "8 PM",
+            "9 PM",
+            "10 PM",
+            "11 PM",
+          ],
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartUniqueVisitsOverTime = new ApexCharts(
+        document.querySelector("#chart-unique-visits-over-time"),
+        optionsUniqueVisitsOverTime
+      );
+
+      chartUniqueVisitsOverTime.render();
+
+      const sidebar = document.querySelector("aside");
+
+      function openSidebar() {
+        sidebar.style.height = "100vh";
+        sidebar.style.marginLeft = "0";
+        sidebar.style.display = "block";
+        sidebar.style.backgroundColor = "#ffffff";
+        sidebar.style.zIndex = "1";
+        sidebar.style.overflowY = "scroll";
+        sidebar.style.animationName = "showSidebar";
+      }
+
+      function closeSidebar() {
+        sidebar.style.height = "";
+        sidebar.style.marginLeft = "-100vw";
+        sidebar.style.backgroundColor = "";
+        sidebar.style.zIndex = "0";
+        sidebar.style.overflowY = "";
+        sidebar.style.animationName = "";
+      }
+
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth > 1024) {
+          sidebar.style.height = "";
+          sidebar.style.marginLeft = "";
+          sidebar.style.backgroundColor = "";
+          sidebar.style.zIndex = "0";
+          sidebar.style.overflowY = "";
+          sidebar.style.animationName = "";
+        }
+      });
+    </script>
+  </body>
+</html>

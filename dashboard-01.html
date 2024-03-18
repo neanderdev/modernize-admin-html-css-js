@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dashboard-01.css" />
+
+    <title>Dashboard 01 | Modernize</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button type="button" class="open-sidebar" onclick="openSidebar()">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo" />
+
+          <h4>Modernize</h4>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search..." />
+
+        <i data-lucide="search"></i>
+      </div>
+
+      <div class="info-user">
+        <button type="button" class="chat-button">
+          <i data-lucide="message-square-text"></i>
+        </button>
+
+        <button type="button" class="notifications-button">
+          <i data-lucide="bell"></i>
+
+          <span>5</span>
+        </button>
+
+        <button type="button" class="user-button">
+          <img src="https://github.com/neanderdev.png" alt="Imagem de perfil" />
+
+          <span>Neander</span>
+
+          <i data-lucide="chevron-down"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <button type="button" class="close-sidebar" onclick="closeSidebar()">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="links">
+          <ul>
+            <li class="active">
+              <a href="">
+                <i data-lucide="home"></i>
+
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="list"></i>
+
+                Orders
+
+                <span class="badge">16</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="tag"></i>
+
+                Products
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="folder"></i>
+
+                Categories
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="users"></i>
+
+                Customers
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="area-chart"></i>
+
+                Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="star"></i>
+
+                Coupons
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="message-square-text"></i>
+
+                Inbox
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Other Information</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="help-circle"></i>
+
+                Knowledge Base
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="bookmark"></i>
+
+                Product Updates
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Settings</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="user"></i>
+
+                Personal Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="settings"></i>
+
+                Global Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <span>Grow Business</span>
+
+          <p>Explore our marketing solutions</p>
+
+          <button type="button" class="regular">Read More</button>
+        </div>
+      </aside>
+
+      <main>
+        <div class="header">
+          <h5>Dashboard</h5>
+
+          <button type="button" class="button-white">
+            <i data-lucide="settings"></i>
+
+            Manage
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-info">
+              <h6>$10.540</h6>
+
+              <span>Total Revenue</span>
+
+              <span class="income">
+                22.45%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+
+            <div class="icon">
+              <i data-lucide="dollar-sign"></i>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <h6>1,056</h6>
+
+              <span>Orders</span>
+
+              <span class="income">
+                15.34%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+
+            <div class="icon">
+              <i data-lucide="shopping-cart"></i>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <h6>48</h6>
+
+              <span>Active Sessions</span>
+
+              <span class="expense">
+                18.25%
+
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="icon">
+              <i data-lucide="user"></i>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <h6>5.024</h6>
+
+              <span>Total Sessions</span>
+
+              <span class="expense">
+                10.24%
+
+                <i data-lucide="chevron-down"></i>
+              </span>
+            </div>
+
+            <div class="icon">
+              <i data-lucide="users"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="orders-over-time-and-last-days-sales">
+          <div class="orders-over-time">
+            <div class="header">
+              <span>Orders Over Time</span>
+
+              <button type="button" class="dropdown">
+                Last 12 Hours
+
+                <i data-lucide="chevron-down"></i>
+              </button>
+            </div>
+
+            <div class="chart-legends">
+              <div class="stats-legend">
+                <div class="stat-legend">
+                  <h6>645</h6>
+
+                  <span>Orders on May 22</span>
+                </div>
+
+                <div class="stat-legend">
+                  <h6>472</h6>
+
+                  <span>Orders on May 21</span>
+                </div>
+              </div>
+
+              <div class="legend">
+                <span class="may-23">May 23</span>
+
+                <span class="may-24">May 24</span>
+              </div>
+            </div>
+
+            <div id="chart-orders-over-time"></div>
+          </div>
+
+          <div class="last-days-sales">
+            <div class="header">
+              <span>Last 7 Days Sales</span>
+            </div>
+
+            <div class="stat-legend">
+              <h6>1,259</h6>
+
+              <span>Items Sold</span>
+            </div>
+
+            <div class="stat-legend">
+              <h6>$12,546</h6>
+
+              <span>Revenue</span>
+            </div>
+
+            <div id="chart-last-days-sales"></div>
+          </div>
+        </div>
+
+        <div class="recent-transactions-and-top-products-by-units-sold">
+          <div class="recent-transactions">
+            <div class="header">
+              <span>Recent Transactions</span>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>
+                      <span>Name</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Date</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Amount</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Status</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Jessica S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$124.97</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge paid">Paid</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Andrew S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$55.42</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge pending">Pending</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Kevin S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$89.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge paid">Paid</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Jack S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$144.94</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge pending">Pending</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <span>Arthur S.</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="date">
+                      <span class="title-head">Date</span>
+
+                      <span>06.03.2024</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="amount">
+                      <span class="title-head">Amount</span>
+
+                      <span>$70.52</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="status">
+                      <span class="title-head">Status</span>
+
+                      <span class="badge paid">Paid</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="top-products-by-units-sold">
+            <div class="header">
+              <span>Top Products by Units Sold</span>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>
+                      <span>Name</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Price</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Units Sold</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <div>
+                        <img
+                          src="https://images.unsplash.com/photo-1581655353564-df123a1eb820"
+                          alt="Camiseta Branca"
+                        />
+
+                        <span>Men Grey Hoodie</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">
+                      <span class="title-head">Price</span>
+
+                      <span>$49.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="units-sold">
+                      <span class="title-head">Units Sold</span>
+
+                      <span>204</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <div>
+                        <img
+                          src="https://images.unsplash.com/photo-1581655353564-df123a1eb820"
+                          alt="Camiseta Branca"
+                        />
+
+                        <span>Women Striped T-Shirt</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">
+                      <span class="title-head">Price</span>
+
+                      <span>$34.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="units-sold">
+                      <span class="title-head">Units Sold</span>
+
+                      <span>155</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <div>
+                        <img
+                          src="https://images.unsplash.com/photo-1581655353564-df123a1eb820"
+                          alt="Camiseta Branca"
+                        />
+
+                        <span>Women White T-Shirt</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">
+                      <span class="title-head">Price</span>
+
+                      <span>$40.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="units-sold">
+                      <span class="title-head">Units Sold</span>
+
+                      <span>120</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <div>
+                        <img
+                          src="https://images.unsplash.com/photo-1581655353564-df123a1eb820"
+                          alt="Camiseta Branca"
+                        />
+
+                        <span>Men White T-Shirt</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">
+                      <span class="title-head">Price</span>
+
+                      <span>$49.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="units-sold">
+                      <span class="title-head">Units Sold</span>
+
+                      <span>204</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="name">
+                      <span class="title-head">Name</span>
+
+                      <div>
+                        <img
+                          src="https://images.unsplash.com/photo-1581655353564-df123a1eb820"
+                          alt="Camiseta Branca"
+                        />
+
+                        <span>Women Red T-Shirt</span>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="price">
+                      <span class="title-head">Price</span>
+
+                      <span>$34.90</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="units-sold">
+                      <span class="title-head">Units Sold</span>
+
+                      <span>155</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const optionsOrdersOverTime = {
+        chart: {
+          type: "line",
+          width: "100%",
+          height: "75%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "May 23",
+            data: [250, 110, 356, 95, 42, 269, 105, 198, 97, 250, 365, 412],
+            color: "#d9e4ff",
+          },
+          {
+            name: "May 24",
+            data: [100, 150, 250, 110, 210, 330, 495, 587, 75, 95, 153, 369],
+            color: "#1e5eff",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: [
+            "4am",
+            "5am",
+            "6am",
+            "7am",
+            "8am",
+            "9am",
+            "10am",
+            "11am",
+            "12am",
+            "1pm",
+            "2pm",
+            "3pm",
+          ],
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartOrdersOverTime = new ApexCharts(
+        document.querySelector("#chart-orders-over-time"),
+        optionsOrdersOverTime
+      );
+
+      chartOrdersOverTime.render();
+
+      const optionsLastDaysSales = {
+        chart: {
+          type: "bar",
+          width: "100%",
+          height: "60%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "Last 7 Days Sales",
+            data: ["111", "75", "50", "250", "164", "198", "297"],
+            color: "#1FD286",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: ["12", "13", "14", "15", "16", "17", "18"],
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            columnWidth: "35%",
+          },
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartLastDaysSales = new ApexCharts(
+        document.querySelector("#chart-last-days-sales"),
+        optionsLastDaysSales
+      );
+
+      chartLastDaysSales.render();
+
+      const sidebar = document.querySelector("aside");
+
+      function openSidebar() {
+        sidebar.style.height = "100vh";
+        sidebar.style.marginLeft = "0";
+        sidebar.style.display = "block";
+        sidebar.style.backgroundColor = "#ffffff";
+        sidebar.style.zIndex = "1";
+        sidebar.style.overflowY = "scroll";
+        sidebar.style.animationName = "showSidebar";
+      }
+
+      function closeSidebar() {
+        sidebar.style.height = "";
+        sidebar.style.marginLeft = "-100vw";
+        sidebar.style.backgroundColor = "";
+        sidebar.style.zIndex = "0";
+        sidebar.style.overflowY = "";
+        sidebar.style.animationName = "";
+      }
+
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth > 1024) {
+          sidebar.style.height = "";
+          sidebar.style.marginLeft = "";
+          sidebar.style.backgroundColor = "";
+          sidebar.style.zIndex = "0";
+          sidebar.style.overflowY = "";
+          sidebar.style.animationName = "";
+        }
+      });
+    </script>
+  </body>
+</html>

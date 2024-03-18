@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./categories.css" />
+
+    <title>Categories | Modernize</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button type="button" class="open-sidebar" onclick="openSidebar()">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo" />
+
+          <h4>Modernize</h4>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search..." />
+
+        <i data-lucide="search"></i>
+      </div>
+
+      <div class="info-user">
+        <button type="button" class="chat-button">
+          <i data-lucide="message-square-text"></i>
+        </button>
+
+        <button type="button" class="notifications-button">
+          <i data-lucide="bell"></i>
+
+          <span>5</span>
+        </button>
+
+        <button type="button" class="user-button">
+          <img src="https://github.com/neanderdev.png" alt="Imagem de perfil" />
+
+          <span>Neander</span>
+
+          <i data-lucide="chevron-down"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <button type="button" class="close-sidebar" onclick="closeSidebar()">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="links">
+          <ul>
+            <li>
+              <a href="">
+                <i data-lucide="home"></i>
+
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="list"></i>
+
+                Orders
+
+                <span class="badge">16</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="tag"></i>
+
+                Products
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="">
+                <i data-lucide="folder"></i>
+
+                Categories
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="users"></i>
+
+                Customers
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="area-chart"></i>
+
+                Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="star"></i>
+
+                Coupons
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="message-square-text"></i>
+
+                Inbox
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Other Information</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="help-circle"></i>
+
+                Knowledge Base
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="bookmark"></i>
+
+                Product Updates
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Settings</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="user"></i>
+
+                Personal Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="settings"></i>
+
+                Global Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <span>Grow Business</span>
+
+          <p>Explore our marketing solutions</p>
+
+          <button type="button" class="regular">Read More</button>
+        </div>
+      </aside>
+
+      <main>
+        <div class="header">
+          <h5>Categories</h5>
+
+          <div class="buttons-wrapper">
+            <button type="button" class="primary">
+              <i data-lucide="plus"></i>
+
+              Add Category
+            </button>
+          </div>
+        </div>
+
+        <div class="categories">
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/photo-1562157873-818bc0726f68"
+              alt="Men Clothes"
+            />
+
+            <div class="category-info">
+              <span class="name">Men Clothes</span>
+
+              <span class="qtd-items">24 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d"
+              alt="Women Clothes"
+            />
+
+            <div class="category-info">
+              <span class="name">Women Clothes</span>
+
+              <span class="qtd-items">12 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/3/www.madebyvadim.com.jpg"
+              alt="Accessories"
+            />
+
+            <div class="category-info">
+              <span class="name">Accessories</span>
+
+              <span class="qtd-items">43 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/photo-1523381294911-8d3cead13475"
+              alt="Cotton Clothes"
+            />
+
+            <div class="category-info">
+              <span class="name">Cotton Clothes</span>
+
+              <span class="qtd-items">31 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661340676129-f530e5db20ba"
+              alt="Summer Clothes"
+            />
+
+            <div class="category-info">
+              <span class="name">Summer Clothes</span>
+
+              <span class="qtd-items">26 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/photo-1489370603040-dc6c28a1d37a"
+              alt="Wedding Clothes"
+            />
+
+            <div class="category-info">
+              <span class="name">Wedding Clothes</span>
+
+              <span class="qtd-items">52 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1671149785230-bf9fc44e3829"
+              alt="Spring Collection"
+            />
+
+            <div class="category-info">
+              <span class="name">Spring Collection</span>
+
+              <span class="qtd-items">24 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1690366910345-5807bf328585"
+              alt="Casual Clothes"
+            />
+
+            <div class="category-info">
+              <span class="name">Casual Clothes</span>
+
+              <span class="qtd-items">52 items</span>
+            </div>
+          </div>
+
+          <div class="category">
+            <img
+              src="https://images.unsplash.com/photo-1572307480813-ceb0e59d8325"
+              alt="Hats"
+            />
+
+            <div class="category-info">
+              <span class="name">Hats</span>
+
+              <span class="qtd-items">26 items</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const sidebar = document.querySelector("aside");
+
+      function openSidebar() {
+        sidebar.style.height = "100vh";
+        sidebar.style.marginLeft = "0";
+        sidebar.style.display = "block";
+        sidebar.style.backgroundColor = "#ffffff";
+        sidebar.style.zIndex = "1";
+        sidebar.style.overflowY = "scroll";
+        sidebar.style.animationName = "showSidebar";
+      }
+
+      function closeSidebar() {
+        sidebar.style.height = "";
+        sidebar.style.marginLeft = "-100vw";
+        sidebar.style.backgroundColor = "";
+        sidebar.style.zIndex = "0";
+        sidebar.style.overflowY = "";
+        sidebar.style.animationName = "";
+      }
+
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth > 1024) {
+          sidebar.style.height = "";
+          sidebar.style.marginLeft = "";
+          sidebar.style.backgroundColor = "";
+          sidebar.style.zIndex = "0";
+          sidebar.style.overflowY = "";
+          sidebar.style.animationName = "";
+        }
+      });
+    </script>
+  </body>
+</html>

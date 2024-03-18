@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dashboard-02.css" />
+
+    <title>Dashboard 02 | Modernize</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button type="button" class="open-sidebar" onclick="openSidebar()">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo" />
+
+          <h4>Modernize</h4>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search..." />
+
+        <i data-lucide="search"></i>
+      </div>
+
+      <div class="info-user">
+        <button type="button" class="chat-button">
+          <i data-lucide="message-square-text"></i>
+        </button>
+
+        <button type="button" class="notifications-button">
+          <i data-lucide="bell"></i>
+
+          <span>5</span>
+        </button>
+
+        <button type="button" class="user-button">
+          <img src="https://github.com/neanderdev.png" alt="Imagem de perfil" />
+
+          <span>Neander</span>
+
+          <i data-lucide="chevron-down"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <button type="button" class="close-sidebar" onclick="closeSidebar()">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="links">
+          <ul>
+            <li class="active">
+              <a href="">
+                <i data-lucide="home"></i>
+
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="list"></i>
+
+                Orders
+
+                <span class="badge">16</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="tag"></i>
+
+                Products
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="folder"></i>
+
+                Categories
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="users"></i>
+
+                Customers
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="area-chart"></i>
+
+                Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="star"></i>
+
+                Coupons
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="message-square-text"></i>
+
+                Inbox
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Other Information</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="help-circle"></i>
+
+                Knowledge Base
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="bookmark"></i>
+
+                Product Updates
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Settings</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="user"></i>
+
+                Personal Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="settings"></i>
+
+                Global Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <span>Grow Business</span>
+
+          <p>Explore our marketing solutions</p>
+
+          <button type="button" class="regular">Read More</button>
+        </div>
+      </aside>
+
+      <main>
+        <div class="header">
+          <h5>Dashboard</h5>
+
+          <button type="button" class="button-white">
+            <i data-lucide="settings"></i>
+
+            Manage
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-info">
+              <span>Existing Users</span>
+
+              <h6>5.653</h6>
+
+              <span class="income">
+                22.45%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+
+            <div id="chart-existing-users"></div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <span>New Users</span>
+
+              <h6>1.650</h6>
+
+              <span class="income">
+                15.34%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+
+            <div id="chart-new-users"></div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-info">
+              <span>Unique Visits</span>
+
+              <h6>5.450</h6>
+
+              <span class="expense">
+                10.24%
+
+                <i data-lucide="chevron-up"></i>
+              </span>
+            </div>
+
+            <div id="chart-unique-visits"></div>
+          </div>
+        </div>
+
+        <div class="store-funnel-and-age-distribution">
+          <div class="store-funnel">
+            <div class="header">
+              <span>Store Funnel</span>
+
+              <button type="button" class="dropdown">
+                Last 7 Days
+
+                <i data-lucide="chevron-down"></i>
+              </button>
+            </div>
+
+            <p>
+              Conversion Rate: <strong>28%</strong>
+              <span class="badge increase">4% Increase</span>
+            </p>
+
+            <div id="chart-store-funnel"></div>
+          </div>
+
+          <div class="age-distribution">
+            <div class="header">
+              <span>Age Distribution</span>
+            </div>
+
+            <div id="chart-age-distribution"></div>
+
+            <div class="legends">
+              <div class="legend">
+                <div>
+                  <div class="square blue"></div>
+
+                  <span>0-18 years</span>
+                </div>
+
+                <span>50%</span>
+              </div>
+
+              <div class="legend">
+                <div>
+                  <div class="square yellow"></div>
+
+                  <span>18-30 years</span>
+                </div>
+
+                <span>30%</span>
+              </div>
+
+              <div class="legend">
+                <div>
+                  <div class="square orange"></div>
+
+                  <span>30-40 years</span>
+                </div>
+
+                <span>10%</span>
+              </div>
+
+              <div class="legend">
+                <div>
+                  <div class="square green"></div>
+
+                  <span>Other</span>
+                </div>
+
+                <span>10%</span>
+              </div>
+            </div>
+
+            <hr />
+
+            <a href="">Find out more</a>
+          </div>
+        </div>
+
+        <div class="most-visited-pages-and-social-media-performance">
+          <div class="most-visited-pages">
+            <div class="header">
+              <h5>Most Visited Pages</h5>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div>
+                      <span>Page Name</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Visits</span>
+                    </div>
+                  </th>
+
+                  <th>
+                    <div>
+                      <span>Unique Visits</span>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="page-name">
+                      <span class="title-head">Page Name</span>
+
+                      <span>/home/</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="visits">
+                      <span class="title-head">Visits</span>
+
+                      <span>8.402</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="unique-visits">
+                      <span class="title-head">Unique Visits</span>
+
+                      <span>4.230</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="page-name">
+                      <span class="title-head">Page Name</span>
+
+                      <span>/store/main/</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="visits">
+                      <span class="title-head">Visits</span>
+
+                      <span>8.210</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="unique-visits">
+                      <span class="title-head">Unique Visits</span>
+
+                      <span>4.123</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="page-name">
+                      <span class="title-head">Page Name</span>
+
+                      <span>/store/women-clothes/</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="visits">
+                      <span class="title-head">Visits</span>
+
+                      <span>7.500</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="unique-visits">
+                      <span class="title-head">Unique Visits</span>
+
+                      <span>3.612</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="page-name">
+                      <span class="title-head">Page Name</span>
+
+                      <span>/store/men-clothes/</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="visits">
+                      <span class="title-head">Visits</span>
+
+                      <span>6.420</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="unique-visits">
+                      <span class="title-head">Unique Visits</span>
+
+                      <span>2.425</span>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="page-name">
+                      <span class="title-head">Page Name</span>
+
+                      <span>/store/accessories/</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="visits">
+                      <span class="title-head">Visits</span>
+
+                      <span>5.423</span>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="unique-visits">
+                      <span class="title-head">Unique Visits</span>
+
+                      <span>1.864</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="social-media-performance">
+            <div class="header">
+              <h5>Social Media Performance</h5>
+            </div>
+
+            <div class="social-media-performance-list">
+              <div class="social-media-performance-data">
+                <div class="social-media-performance-data-header">
+                  <span class="name">Facebook</span>
+
+                  <span class="value">8.402 visits</span>
+                </div>
+
+                <progress value="85" max="100">85%</progress>
+              </div>
+
+              <div class="social-media-performance-data">
+                <div class="social-media-performance-data-header">
+                  <span class="name">Instagram</span>
+
+                  <span class="value">7.420 visits</span>
+                </div>
+
+                <progress value="60" max="100">60%</progress>
+              </div>
+
+              <div class="social-media-performance-data">
+                <div class="social-media-performance-data-header">
+                  <span class="name">Twitter</span>
+
+                  <span class="value">6.324 visits</span>
+                </div>
+
+                <progress value="45" max="100">45%</progress>
+              </div>
+
+              <div class="social-media-performance-data">
+                <div class="social-media-performance-data-header">
+                  <span class="name">LinkedIn</span>
+
+                  <span class="value">4.126 visits</span>
+                </div>
+
+                <progress value="30" max="100">30%</progress>
+              </div>
+
+              <div class="social-media-performance-data">
+                <div class="social-media-performance-data-header">
+                  <span class="name">Pinterest</span>
+
+                  <span class="value">2.080 visits</span>
+                </div>
+
+                <progress value="20" max="100">20%</progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const optionsExistingUsers = {
+        chart: {
+          type: "bar",
+          width: "90%",
+          height: "75%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "Existing Users",
+            data: ["111", "75", "50", "250", "164", "198"],
+            color: "#1E5EFF",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: ["12", "13", "14", "15", "16", "17", "18"],
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+        },
+        yaxis: {
+          show: false,
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 8,
+            columnWidth: "60%",
+          },
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartExistingUsers = new ApexCharts(
+        document.querySelector("#chart-existing-users"),
+        optionsExistingUsers
+      );
+
+      chartExistingUsers.render();
+
+      const optionsNewUsers = {
+        chart: {
+          type: "bar",
+          width: "90%",
+          height: "75%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "New Users",
+            data: ["111", "75", "50", "250", "164", "198"],
+            color: "#1FD286",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: ["12", "13", "14", "15", "16", "17", "18"],
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+        },
+        yaxis: {
+          show: false,
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 8,
+            columnWidth: "60%",
+          },
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartNewUsers = new ApexCharts(
+        document.querySelector("#chart-new-users"),
+        optionsNewUsers
+      );
+
+      chartNewUsers.render();
+
+      const optionsUniqueVisits = {
+        chart: {
+          type: "bar",
+          width: "90%",
+          height: "75%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "Unique Visits",
+            data: ["111", "75", "50", "250", "164", "198"],
+            color: "#FFC700",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: ["12", "13", "14", "15", "16", "17", "18"],
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+        },
+        yaxis: {
+          show: false,
+          labels: {
+            show: false,
+          },
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: false,
+          },
+          tooltip: {
+            enabled: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 8,
+            columnWidth: "60%",
+          },
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartUniqueVisits = new ApexCharts(
+        document.querySelector("#chart-unique-visits"),
+        optionsUniqueVisits
+      );
+
+      chartUniqueVisits.render();
+
+      const optionsStoreFunnel = {
+        chart: {
+          type: "bar",
+          width: "100%",
+          height: "79%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [
+          {
+            name: "Store Funnel",
+            data: ["1000", "750", "985", "1245"],
+            color: "#1E5EFF",
+          },
+        ],
+        xaxis: {
+          type: "category",
+          categories: [
+            "Visited Site",
+            "Added to Cart",
+            "Proceed to Checkout",
+            "Made a Purchase",
+          ],
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 4,
+            columnWidth: "20%",
+          },
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartStoreFunnel = new ApexCharts(
+        document.querySelector("#chart-store-funnel"),
+        optionsStoreFunnel
+      );
+
+      chartStoreFunnel.render();
+
+      const optionsAgeDistribution = {
+        chart: {
+          type: "donut",
+          width: "100%",
+          height: "40%",
+          toolbar: {
+            show: false,
+          },
+          animations: {
+            enabled: true,
+            easing: "easeinout",
+            speed: 800,
+            animateGradually: {
+              enabled: true,
+              delay: 150,
+            },
+            dynamicAnimation: {
+              enabled: true,
+              speed: 350,
+            },
+          },
+        },
+        series: [50, 30, 10, 10],
+        labels: ["0-18 Years", "18-30 Years", "30-40 Years", "Other"],
+        dataLabels: {
+          enabled: false,
+        },
+        grid: {
+          show: false,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: false,
+            },
+          },
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      const chartAgeDistribution = new ApexCharts(
+        document.querySelector("#chart-age-distribution"),
+        optionsAgeDistribution
+      );
+
+      chartAgeDistribution.render();
+
+      const sidebar = document.querySelector("aside");
+
+      function openSidebar() {
+        sidebar.style.height = "100vh";
+        sidebar.style.marginLeft = "0";
+        sidebar.style.display = "block";
+        sidebar.style.backgroundColor = "#ffffff";
+        sidebar.style.zIndex = "1";
+        sidebar.style.overflowY = "scroll";
+        sidebar.style.animationName = "showSidebar";
+      }
+
+      function closeSidebar() {
+        sidebar.style.height = "";
+        sidebar.style.marginLeft = "-100vw";
+        sidebar.style.backgroundColor = "";
+        sidebar.style.zIndex = "0";
+        sidebar.style.overflowY = "";
+        sidebar.style.animationName = "";
+      }
+
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth > 1024) {
+          sidebar.style.height = "";
+          sidebar.style.marginLeft = "";
+          sidebar.style.backgroundColor = "";
+          sidebar.style.zIndex = "0";
+          sidebar.style.overflowY = "";
+          sidebar.style.animationName = "";
+        }
+      });
+    </script>
+  </body>
+</html>

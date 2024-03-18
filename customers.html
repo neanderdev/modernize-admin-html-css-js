@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./customers.css" />
+
+    <title>Customers | Modernize</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button type="button" class="open-sidebar" onclick="openSidebar()">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo" />
+
+          <h4>Modernize</h4>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search..." />
+
+        <i data-lucide="search"></i>
+      </div>
+
+      <div class="info-user">
+        <button type="button" class="chat-button">
+          <i data-lucide="message-square-text"></i>
+        </button>
+
+        <button type="button" class="notifications-button">
+          <i data-lucide="bell"></i>
+
+          <span>5</span>
+        </button>
+
+        <button type="button" class="user-button">
+          <img src="https://github.com/neanderdev.png" alt="Imagem de perfil" />
+
+          <span>Neander</span>
+
+          <i data-lucide="chevron-down"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <button type="button" class="close-sidebar" onclick="closeSidebar()">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="links">
+          <ul>
+            <li>
+              <a href="">
+                <i data-lucide="home"></i>
+
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="list"></i>
+
+                Orders
+
+                <span class="badge">16</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="tag"></i>
+
+                Products
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="folder"></i>
+
+                Categories
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="">
+                <i data-lucide="users"></i>
+
+                Customers
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="area-chart"></i>
+
+                Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="star"></i>
+
+                Coupons
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="message-square-text"></i>
+
+                Inbox
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Other Information</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="help-circle"></i>
+
+                Knowledge Base
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="bookmark"></i>
+
+                Product Updates
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Settings</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="user"></i>
+
+                Personal Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="settings"></i>
+
+                Global Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <span>Grow Business</span>
+
+          <p>Explore our marketing solutions</p>
+
+          <button type="button" class="regular">Read More</button>
+        </div>
+      </aside>
+
+      <main>
+        <div class="header">
+          <h5>Customers</h5>
+
+          <div class="buttons-wrapper">
+            <button type="button" class="button-white">Export</button>
+
+            <button type="button" class="primary">
+              <i data-lucide="plus"></i>
+
+              Add Customer
+            </button>
+          </div>
+        </div>
+
+        <div class="customers">
+          <div class="header">
+            <div class="filters">
+              <select name="filter-orders">
+                <option value="">Filter</option>
+
+                <option value="option-1">Option 1</option>
+
+                <option value="option-2">Option 2</option>
+
+                <option value="option-3">Option 3</option>
+              </select>
+
+              <div class="search-wrapper">
+                <input type="search" name="search" placeholder="Search..." />
+
+                <i data-lucide="search"></i>
+              </div>
+            </div>
+
+            <div class="actions">
+              <button type="button" class="button-white">
+                <i data-lucide="pencil-line"></i>
+              </button>
+
+              <button type="button" class="button-white">
+                <i data-lucide="trash"></i>
+              </button>
+            </div>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <div class="checkbox-all">
+                    <input type="checkbox" name="checkbox-all" />
+
+                    <span>Name</span>
+                  </div>
+                </th>
+
+                <th>
+                  <div>
+                    <span>Location</span>
+                  </div>
+                </th>
+
+                <th>
+                  <div>
+                    <span>Orders</span>
+                  </div>
+                </th>
+
+                <th>
+                  <div>
+                    <span>Spent</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="name">
+                    <span class="title-head">Name</span>
+
+                    <div class="name-container">
+                      <input type="checkbox" name="checkbox-1" />
+
+                      <img
+                        src="https://github.com/neanderdev.png"
+                        alt="Neander de Souza"
+                      />
+
+                      <span class="name">Neander de Souza</span>
+                    </div>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="location">
+                    <span class="title-head">Location</span>
+
+                    <span>Brasil</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="orders">
+                    <span class="title-head">Orders</span>
+
+                    <span>5</span>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="spent">
+                    <span class="title-head">Spent</span>
+
+                    <span>$96.14</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pagination-container">
+            <div class="pagination">
+              <i data-lucide="move-left"></i>
+
+              <span>1</span>
+
+              <span class="active">2</span>
+
+              <span>3</span>
+
+              <span>4</span>
+
+              <span>...</span>
+
+              <span>24</span>
+
+              <i data-lucide="move-right"></i>
+            </div>
+
+            <span>154 Results</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const sidebar = document.querySelector("aside");
+
+      function openSidebar() {
+        sidebar.style.height = "100vh";
+        sidebar.style.marginLeft = "0";
+        sidebar.style.display = "block";
+        sidebar.style.backgroundColor = "#ffffff";
+        sidebar.style.zIndex = "1";
+        sidebar.style.overflowY = "scroll";
+        sidebar.style.animationName = "showSidebar";
+      }
+
+      function closeSidebar() {
+        sidebar.style.height = "";
+        sidebar.style.marginLeft = "-100vw";
+        sidebar.style.backgroundColor = "";
+        sidebar.style.zIndex = "0";
+        sidebar.style.overflowY = "";
+        sidebar.style.animationName = "";
+      }
+
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth > 1024) {
+          sidebar.style.height = "";
+          sidebar.style.marginLeft = "";
+          sidebar.style.backgroundColor = "";
+          sidebar.style.zIndex = "0";
+          sidebar.style.overflowY = "";
+          sidebar.style.animationName = "";
+        }
+      });
+    </script>
+  </body>
+</html>

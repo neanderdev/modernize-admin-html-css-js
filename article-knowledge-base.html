@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./article-knowledge-base.css" />
+
+    <title>Article Knowledge Base | Modernize</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button type="button" class="open-sidebar" onclick="openSidebar()">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo" />
+
+          <h4>Modernize</h4>
+        </div>
+      </div>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search..." />
+
+        <i data-lucide="search"></i>
+      </div>
+
+      <div class="info-user">
+        <button type="button" class="chat-button">
+          <i data-lucide="message-square-text"></i>
+        </button>
+
+        <button type="button" class="notifications-button">
+          <i data-lucide="bell"></i>
+
+          <span>5</span>
+        </button>
+
+        <button type="button" class="user-button">
+          <img src="https://github.com/neanderdev.png" alt="Imagem de perfil" />
+
+          <span>Neander</span>
+
+          <i data-lucide="chevron-down"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <button type="button" class="close-sidebar" onclick="closeSidebar()">
+          <i data-lucide="x"></i>
+        </button>
+
+        <div class="links">
+          <ul>
+            <li>
+              <a href="">
+                <i data-lucide="home"></i>
+
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="list"></i>
+
+                Orders
+
+                <span class="badge">16</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="tag"></i>
+
+                Products
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="folder"></i>
+
+                Categories
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="users"></i>
+
+                Customers
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="area-chart"></i>
+
+                Reports
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="star"></i>
+
+                Coupons
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="message-square-text"></i>
+
+                Inbox
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Other Information</span>
+
+            <li class="active">
+              <a href="">
+                <i data-lucide="help-circle"></i>
+
+                Knowledge Base
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="bookmark"></i>
+
+                Product Updates
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <span>Settings</span>
+
+            <li>
+              <a href="">
+                <i data-lucide="user"></i>
+
+                Personal Settings
+              </a>
+            </li>
+
+            <li>
+              <a href="">
+                <i data-lucide="settings"></i>
+
+                Global Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner">
+          <span>Grow Business</span>
+
+          <p>Explore our marketing solutions</p>
+
+          <button type="button" class="regular">Read More</button>
+        </div>
+      </aside>
+
+      <main>
+        <div class="header">
+          <div class="title">
+            <a href="">
+              <i data-lucide="move-left"></i>
+
+              Back
+            </a>
+
+            <h5>Getting Started</h5>
+          </div>
+        </div>
+
+        <div class="article-knowledge-container">
+          <div class="navigations">
+            <ul>
+              <li class="active">
+                <a href="">Introduction to Product</a>
+              </li>
+
+              <li>
+                <a href="">Tutorials for Beginners</a>
+              </li>
+
+              <li>
+                <a href="">Moving to Bolt System</a>
+              </li>
+
+              <li>
+                <a href="">Accessibility</a>
+              </li>
+
+              <li>
+                <a href="">Content Management</a>
+              </li>
+
+              <li>
+                <a href="">Generating Reports</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="article-knowledge">
+            <div class="search-wrapper-knowledge">
+              <input type="search" name="search" placeholder="Search..." />
+
+              <i data-lucide="search"></i>
+            </div>
+
+            <article>
+              <h6>Introduction to Product</h6>
+
+              <p>
+                Bolt is content management system, or CMS. Subscription includes
+                content hosting, professionally designed layouts, 24/7 support,
+                and access to our user-friendly platform for managing your
+                business. You can use bolt to create management systems.
+              </p>
+
+              <code>
+                <span>Recommended:</span>
+
+                <span>
+                  You can learn faster by looking some onboarding videos in
+                  video gallery.
+                </span>
+              </code>
+
+              <hr />
+
+              <h6>Starting Guide</h6>
+
+              <p>
+                You can choose from a range of billing plans to get your idea
+                working, whether you’re starting with a website or launching a
+                new business.
+              </p>
+
+              <div class="list-numbered-container">
+                <div class="list-numbered">
+                  <span class="number">1</span>
+
+                  <p>
+                    All billing plans are available on monthly and annual
+                    payment cycles. On an annual billing cycle, the average
+                    monthly cost is lower, and you can get a 3 months free.All
+                    billing plans are available on monthly and annual payment
+                    cycles. On an annual billing cycle, the average monthly cost
+                    is lower, and you can get a 3 months free.
+                  </p>
+                </div>
+
+                <div class="list-numbered">
+                  <span class="number">2</span>
+
+                  <p>
+                    Upgrade to paid service to make your site public. If you
+                    need more time to design your site before going live, you
+                    can hide it behind a password.
+                  </p>
+                </div>
+
+                <div class="list-numbered">
+                  <span class="number">3</span>
+
+                  <p>
+                    Site has a trial period. Trial period is free two-week
+                    period where you can explore the platform, upload content,
+                    experiment with ecommerce website.
+                  </p>
+                </div>
+              </div>
+
+              <hr />
+
+              <h6>Additional Information</h6>
+
+              <div class="tabs">
+                <button class="tab active" type="button">Onboarding</button>
+
+                <button class="tab" type="button">Tutorials</button>
+
+                <button class="tab" type="button">Guides for Beginners</button>
+              </div>
+
+              <div class="onboarding">
+                <p>
+                  In addition to our guides and video tutorials, we offer
+                  webinars to help you get comfortable and explore our product
+                  functionality. In our webinars, we walk you through the basics
+                  of setting up and growing your business.
+                </p>
+
+                <p>
+                  After it ends, we'll email you a video link to the webinar so
+                  you can remember everything you have learn anytime. If you
+                  can't attend the webinar at its scheduled time, you can watch
+                  it later.
+                </p>
+              </div>
+
+              <hr />
+
+              <h6>Was this article helpfull?</h6>
+
+              <div class="actions-button">
+                <button class="button-white" type="button">Yes</button>
+
+                <button class="button-white" type="button">No</button>
+              </div>
+
+              <span class="article-helpful">
+                50 people find this article helpful
+              </span>
+            </article>
+
+            <div class="knowledge-others">
+              <div class="knowledge">
+                <strong>Community Forum</strong>
+
+                <span>
+                  Get help from community members, ask any questions and get
+                  answers faster.
+                </span>
+
+                <a href="">Join Community</a>
+              </div>
+
+              <div class="knowledge">
+                <strong>Webinars</strong>
+
+                <span>
+                  Join our series of webinars where you can ask questions live
+                  and see a presentation.
+                </span>
+
+                <a href="">Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const sidebar = document.querySelector("aside");
+
+      function openSidebar() {
+        sidebar.style.height = "100vh";
+        sidebar.style.marginLeft = "0";
+        sidebar.style.display = "block";
+        sidebar.style.backgroundColor = "#ffffff";
+        sidebar.style.zIndex = "1";
+        sidebar.style.overflowY = "scroll";
+        sidebar.style.animationName = "showSidebar";
+      }
+
+      function closeSidebar() {
+        sidebar.style.height = "";
+        sidebar.style.marginLeft = "-100vw";
+        sidebar.style.backgroundColor = "";
+        sidebar.style.zIndex = "0";
+        sidebar.style.overflowY = "";
+        sidebar.style.animationName = "";
+      }
+
+      window.addEventListener("resize", function (event) {
+        if (window.innerWidth > 1024) {
+          sidebar.style.height = "";
+          sidebar.style.marginLeft = "";
+          sidebar.style.backgroundColor = "";
+          sidebar.style.zIndex = "0";
+          sidebar.style.overflowY = "";
+          sidebar.style.animationName = "";
+        }
+      });
+    </script>
+  </body>
+</html>
